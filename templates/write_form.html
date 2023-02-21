@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div style="text-align: center;">
+    <div class="row1">
+    <div class="clmn1">
+        <label>Post Title</label>
+        <label>Category</label>
+        <label>Post Description</label>
+        <label>Tags</label>
+        <label>Post Image</label>
+        <label>Post Content</label>
+    </div>
+    <div class="clmn2">
+        <input type="text" class="inputs">
+        <select class="inputs">
+            <option>-Select-Category-</option>
+            <option>Polity</option>
+            <option>Story</option>
+            <option>Tech</option>
+            <option>Informative</option>
+        </select>
+        <textarea rows="3" class="inputs"></textarea>
+        <input type="text" class="inputs">
+        <input type="file" class="inputs">
+        <textarea rows="20"class="inputs"></textarea>
+    </div>
+</div>
+<div>
+    <button>Save as draft</button>
+    <button>Publish</button>
+</div>
+</div>
+

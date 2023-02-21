@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" xmlns="http://www.w3.org/1999/html">
+<header>
+    <div>
+        <div class="header-row-1">
+            <div>
+                <img src="static/image/u.png" height="150px">
+            </div>
+            <div>
+                <nav>
+
+                    <ul class="nav_ul">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('write')}}">Write</a>
+                        </li>
+                        <li>
+                            <div class="drop-menu">
+                                <button class="dropbtn">
+                                    Account
+                                </button>
+                                <div class="drop-menu-content">
+                                    <a href=""> Dashboard</a>
+                                    <a href="">My Account</a>
+                                    <a href=""> Log out</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search">
+                <a>
+                    <img src="static/image/search2.png" width="40px">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</header>

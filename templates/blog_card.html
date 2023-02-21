@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% for catgry in category %}
+<div class="blog-card">
+
+    <div>
+
+        <h1>{{catgry}}</h1>
+        <div style="display: flex;">
+            {% for blog in blogs %}
+            <div class="card">
+
+                <img src="{{blog['image']}}" height="150px">
+                <div class="container">
+                    <h3>{{blog['post_title']}}</h3>
+                    <p>{{blog['post_des']}}</p>
+                    <div>
+                        <a href="{{blog['link']}}" class="fullbtn">
+                            <b> Read Full Blog</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="morebtn">
+            <a href="">
+                <b> See More</b>
+            </a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+</div>
