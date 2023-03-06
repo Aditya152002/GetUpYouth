@@ -45,4 +45,4 @@ def home():
 @app.route("/write")
 def write():
     return render_template('write_form.html')
-app.run(debug=True)
+#app.run(debug=True)
